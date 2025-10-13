@@ -1,32 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+
+:root {
+  --primary: #0094C6;
+  --secondary: #005E7C;
+  --accent: #000022;
+  --background: #040F16;
+  --card-bg: #001242;
+  --text: #F3F6F8;
+  --muted: #005E7C;
+  --light-turquoise: #00CED1;
+  --border-radius: 12px;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  --hover-shadow: 0 4px 16px rgba(0, 0, 0, 0.9);
+  --transition: 0.3s ease;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #f0f0f0;
+  font-family: 'Source Code Pro', monospace;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
 }
 
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1em 0;
+header.profile-header {
+  position: relative;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px; 
+  background: linear-gradient(180deg, #000000 0%, var(--secondary) 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
 }
 
-main {
-    margin: 2em;
+.profile-pic {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  object-fit: cover;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: transform var(--transition);
+  z-index: 1;
 }
 
-button {
-    padding: 0.5em 1em;
-    font-size: 1em;
-    cursor: pointer;
+.profile-pic:hover {
+  transform: translateX(-50%) scale(1.05);
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    padding: 1em 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+/* Name */
+.name-gradient {
+  position: relative;
+  display: inline-block;
+  margin-top: 200px;
+  font-size: 2rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #4db8ff, #ffffff, #ffae42);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
 }
+
+.name-gradient::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #4db8ff, #ffffff, #ffae42);
+  border-radius: 2px;
+}
+
+main { flex: 1; width: 100%; max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
+
+.ebiz-card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.ebiz-card:hover {
+  box-shadow: var(--hover-shadow);
+  transform: translateY(-5px);
+}
+
+.ebiz-card h2 {
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: var(--light-turquoise);
+  font-size: 1.75rem;
+}
+
+ul { list-style: none; padding: 0; }
+
+li { margin-bottom: 0.5rem; transition: transform var(--transition); }
+
+li:hover { transform: translateX(5px); }
+
+a { text-decoration: none; color: var(--primary); transition: color var(--transition); }
+
+a:hover { color: #00CED1; }
+
+.experience-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.experience-list li {
+  background: var(--secondary);
+  padding: 0.5rem 0.5rem;   
+  border-radius: 50%;       
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 45px;          
+  height: 45px;
+  font-size: 0.9rem;
+}
+
+.hobbies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 0;
+  list-style: none;
+}
+
+.hobbies-list li {
+  background: var(--secondary);
+  padding: 0.5rem 0.5rem;
+  border-radius: 50%;      
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 45px;          
+  height: 45px;
+  font-size: 0.9rem;
+}
+
+.site-footer {
+  width: 100%;
+  background: linear-gradient(to bottom, var(--card-bg), var(--background));
+  color: var(--text);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.site-footer p { margin: 0.4rem 0; }
+
+.site-footer strong { font-weight: 600; color: var(--light-turquoise); }

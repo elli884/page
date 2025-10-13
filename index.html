@@ -1,26 +1,120 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine Webseite</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elisabeth Nejedli</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Willkommen auf meiner Webseite!</h1>
-    </header>
 
-    <main>
-        <p>Dies ist ein einfacher HTML-Test.</p>
-        <button id="clickMe">Klicke mich!</button>
-        <p id="output"></p>
-    </main>
+  <header class="profile-header">
+    <img src="images/See.png" alt="Elisabeth Nejedli" class="profile-pic">
+    <h1 class="name-gradient">Elisabeth Nejedli</h1>
+  </header>
 
-    <footer>
-        <p>&copy; 2025 Mein Name</p>
-    </footer>
+  <main>
+    <section class="ebiz-card" id="contact">
+      <h2>Kontakt</h2>
+      <ul class="contact-list">
+        <li>✉️ <a href="mailto:elisabeth.nejedli@alumni.fh-aachen.de">elisabeth.nejedli@alumni.fh-aachen.de</a></li>
+        <li>✉️ <a href="mailto:elisabeth.nejedli@rwth-aachen.de">elisabeth.nejedli@rwth-aachen.de</a></li>
+      </ul>
+    </section>
 
-    <script src="js/script.js"></script>
+    <section class="ebiz-card" id="profil">
+      <h2>Profil</h2>
+      <p>Große Liebe zu Technologie, Mathe und Informatik.</p>
+      <p>In meiner dualen Ausbildung zur Softwareentwicklerin arbeite ich überwiegend an Java-, Python- und KI-Projekten.</p>
+      <p>Mein Ziel: Fähigkeiten ausbauen und die Zukunft der KI mitgestalten.</p>
+    </section>
+
+    <section class="ebiz-card" id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li><span>🔍 Java & GUI-Entwicklung </span><span>★★★☆☆</span></li>
+        <li><span>🐍 Python & LLMs & Machine Learning </span><span>★★★★☆</span></li>
+        <li><span>⚙️ Mechatronik & Elektronik </span><span>★☆☆☆☆</span></li>
+      </ul>
+    </section>
+
+    <section class="ebiz-card" id="experience">
+      <h2>Kenntnisse & Praktika</h2>
+      <p>Gearbeitet in folgenden Bereichen:</p>
+      <ul class="badge-list experience-list">
+        <li>🍽️ Gastronomie</li>
+        <li>📦 Lagerarbeit</li>
+        <li>📚 Nachhilfe</li>
+      </ul>
+      <p>Praktika in folgenden Bereichen:</p>
+      <ul class="badge-list experience-list">
+        <li>🌸 Floristik</li>
+        <li>🏠 Dachdecker</li>
+        <li>🐾 Tierheim</li>
+        <li>👮 Polizei</li>
+        <li>🤝 Sozialarbeiter</li>
+      </ul>
+    </section>
+
+    <section class="ebiz-card" id="education">
+      <h2>Ausbildung 🎓</h2>
+      <div class="timeline-edu">
+        <div class="timeline-item">
+          <h3>Duale Ausbildung zum Mathematisch-technischen Softwareentwickler (MATSE) in Aachen</h3>
+          <span class="date">September 2023 - Heute (3 Jahre)</span>
+        </div>
+        <div class="timeline-item">
+          <h3>Auslandsjahr</h3>
+          <span class="date">Juli 2022 - August 2023 (1 Jahr)</span>
+        </div>
+        <div class="timeline-item">
+          <h3>Fachhochschulreife - Fachoberschule Augsburg</h3>
+          <span class="date">Sep 2020 - Juni 2022 (2 Jahre)</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="ebiz-card" id="languages">
+      <h2>Sprachen 🌐</h2>
+      <ul class="lang-list">
+        <li><span>🇩🇪 Deutsch:</span><span style="margin-left: 1rem;">Muttersprache</span></li>
+        <li><span>🇬🇧 Englisch:</span><span style="margin-left: 1rem;">Fließend</span></li>
+      </ul>
+    </section>
+
+    <section class="ebiz-card" id="hobbies">
+      <h2>Hobbys 🎳</h2>
+      <ul class="hobbies-list badge-list">
+        <li>🎶 Musik</li>
+        <li>🏋️‍♂️ Powerlifting</li>
+        <li>📚 Lesen</li>
+        <li>🏞️ Outdoor-Aktivitäten</li>
+        <li>👨‍🍳 Kochen</li>
+      </ul>
+    </section>
+
+<section class="ebiz-card" id="awards">
+  <h2>Auszeichnungen 🏆</h2>
+  <ul class="award-list badge-list">
+    <li>
+      <a href="https://blogs.mathworks.com/student-lounge/2025/08/25/designing-a-quieter-future-how-a-student-team-from-fh-aachen-won-the-smart-city-aachen-hackathon/" 
+         target="_blank" 
+         rel="noopener noreferrer">
+        Gewinn des Smart City Hackathons Aachen 2025
+      </a>
+    </li>
+  </ul>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Elisabeth Nejedli</p>
+    <p><strong>Hinweis gemäß § 5 TMG und § 18 Abs. 3 MStV:</strong></p>
+    <p>Diese Website ist ein rein privates, nicht-kommerzielles Projekt und dient ausschließlich der persönlichen Darstellung und Information. Sie verfolgt keinerlei wirtschaftliche Interessen.</p>
+    <p>Gemäß § 5 Telemediengesetz (TMG) und § 18 Abs. 3 MStV besteht daher keine Impressumspflicht.</p>
+    <p>Es werden keine personenbezogenen Daten erhoben, keine Cookies gesetzt und keine Tracking- oder Analyse-Tools verwendet.</p>
+  </footer>
+
 </body>
 </html>
