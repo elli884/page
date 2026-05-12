@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { ChevronDown } from "lucide-react";
+import { withBase } from "@/lib/basePath";
 
 export default function Hero() {
   return (
@@ -24,7 +25,7 @@ export default function Hero() {
           <div className="relative">
             <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-primary via-turquoise to-blue-400 animate-gradient-x [background-size:200%_200%]" />
             <Image
-              src="/images/See.png"
+              src={withBase("/images/See.png")}
               alt="Elisabeth Nejedli"
               width={230}
               height={230}

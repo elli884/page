@@ -17,7 +17,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Elisabeth Nejedli — Portfolio",
+  title: "Elisabeth Nejedli",
   description:
     "Personal portfolio of Elisabeth Nejedli — MATSE trainee passionate about software, AI and mathematics.",
   keywords: [
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Elisabeth Nejedli" }],
   openGraph: {
-    title: "Elisabeth Nejedli — Portfolio",
+    title: "Elisabeth Nejedli",
     description:
       "MATSE trainee passionate about software, AI and mathematics.",
     type: "website",

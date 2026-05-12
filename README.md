@@ -1,4 +1,4 @@
-# Elisabeth Nejedli — Portfolio
+# Elisabeth Nejedli
 
 Modernes Portfolio von Elisabeth Nejedli, gebaut mit **Next.js 15** (App Router), **TypeScript**, **Tailwind CSS** und **Framer Motion**.
 
@@ -86,11 +86,40 @@ npm run start
 
 Alle Inhalte sind direkt in den jeweiligen Section-Komponenten in `components/sections/` definiert — einfach den entsprechenden Array bzw. Text bearbeiten.
 
-## Deployment
+## Deployment auf GitHub Pages
 
-Empfohlen: **[Vercel](https://vercel.com)** (vom Next.js-Team). Repo verbinden und automatisch deployen.
+Diese Seite ist für **GitHub Pages** unter [`https://elli884.github.io/page/`](https://elli884.github.io/page/) konfiguriert.
 
-Alternativen: Netlify, Cloudflare Pages, Self-Hosting mit `npm run build && npm run start`.
+### Einmaliges Setup im GitHub-Repo
+
+1. Repository auf GitHub öffnen
+2. **Settings → Pages**
+3. Unter **Build and deployment** → **Source** den Eintrag **GitHub Actions** auswählen
+
+### Deployment-Workflow
+
+Bei jedem Push auf `main` läuft `.github/workflows/deploy.yml` automatisch:
+
+1. Node.js 20 installieren
+2. `npm ci`
+3. `npm run build` mit `NEXT_PUBLIC_BASE_PATH=/page` → erzeugt einen statischen Export in `out/`
+4. `out/` wird zu GitHub Pages deployt
+
+Nach dem ersten erfolgreichen Lauf ist die Seite unter <https://elli884.github.io/page/> erreichbar (statt der README).
+
+### Lokaler Static-Export-Test
+
+```bash
+npm run build           # erzeugt out/
+npx serve out -l 3000   # statischer Server zur Vorschau
+```
+
+> Hinweis: Für lokale Entwicklung mit `npm run dev` ist `basePath` automatisch deaktiviert, damit die Seite weiterhin unter `http://localhost:3000/` erreichbar ist.
+
+### Alternativen
+
+- **[Vercel](https://vercel.com)** — Repo verbinden, kein basePath nötig (`NEXT_PUBLIC_BASE_PATH` leer lassen).
+- **Netlify**, **Cloudflare Pages** — funktionieren mit dem statischen `out/` Ordner.
 
 ## Rechtliches
 
