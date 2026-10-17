@@ -50,7 +50,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="mt-4 text-sm sm:text-base text-text/70 max-w-md text-center"
         >
-         AI Master's student · MATSE · Software Developer · AI Enthusiast
+         AI Master&apos;s student · MATSE · Software Developer · AI Enthusiast
         </motion.p>
 
         <motion.div

@@ -13,7 +13,7 @@ export default function Profile() {
           .
         </p>
         <p className="text-base">
-          I'm a software developer with multi-year industry experience, focusing on practical software engineering in{" "}
+          I&apos;m a software developer with multi-year industry experience, focusing on practical software engineering in{" "}
           <span className="text-primary font-medium">Java</span>,{" "}
           <span className="text-primary font-medium">Python</span>, and{" "}
           <span className="text-primary font-medium">AI projects</span>.
