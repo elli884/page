@@ -13,13 +13,13 @@ export default function Profile() {
           .
         </p>
         <p className="text-base">
-          During my dual training as a software developer, I mainly work on{" "}
+          I'm a software developer with multi-year industry experience, focusing on practical software engineering in{" "}
           <span className="text-primary font-medium">Java</span>,{" "}
           <span className="text-primary font-medium">Python</span>, and{" "}
           <span className="text-primary font-medium">AI projects</span>.
         </p>
         <p className="text-base italic text-text/80 border-l-2 border-turquoise/60 pl-4 mt-2">
-          My goal: to expand my skills and help shape the future of AI.
+          My goal: create positive, meaningful value for society while actively shaping the future of AI.
         </p>
       </div>
     </Card>

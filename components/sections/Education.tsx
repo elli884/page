@@ -4,18 +4,23 @@ import Card from "../Card";
 const items = [
   {
     title:
-      "Dual training as a Mathematical-Technical Software Developer (MATSE) in Aachen",
-    date: "September 2023 — Present (3 years)",
+    "AI Master in Maastricht",
+    date: "September 2026 - Present",
     current: true,
   },
   {
+    title:
+      "Dual training as a Mathematical-Technical Software Developer (MATSE) in Aachen",
+    date: "September 2023 - August 2026 (3 years)",
+  },
+  {
     title: "Gap Year Abroad",
-    date: "July 2022 — August 2023 (1 year)",
+    date: "July 2022 - August 2023 (1 year)",
   },
   {
     title:
-      "Higher Education Entrance Qualification — Technical College Augsburg",
-    date: "September 2020 — June 2022 (2 years)",
+      "Higher Education Entrance Qualification - Technical College Augsburg",
+    date: "September 2020 - June 2022 (2 years)",
   },
 ];
 

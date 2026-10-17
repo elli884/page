@@ -2,11 +2,11 @@ import { Sparkles } from "lucide-react";
 import Card from "../Card";
 
 const hobbies = [
-  { icon: "🎶", label: "Music" },
   { icon: "🏋️‍♂️", label: "Powerlifting" },
   { icon: "📚", label: "Reading" },
   { icon: "🏞️", label: "Outdoor activities" },
   { icon: "👨‍🍳", label: "Cooking" },
+  { icon: "🔢", label: "Soduku & Puzzling" },
 ];
 
 export default function Hobbies() {

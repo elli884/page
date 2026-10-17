@@ -2,7 +2,7 @@ import { Mail } from "lucide-react";
 import Card from "../Card";
 
 const emails = [
-  "elisabeth.nejedli@alumni.fh-aachen.de",
+  "e.nejedli@student.maastrichtuniversity.nl",
   "elisabeth.nejedli@rwth-aachen.de",
 ];
 

@@ -4,12 +4,12 @@ Modernes Portfolio von Elisabeth Nejedli, gebaut mit **Next.js 15** (App Router)
 
 ## Tech Stack
 
-- **[Next.js 15](https://nextjs.org)** — React Framework mit App Router
-- **[React 19](https://react.dev)** — UI Library
-- **[TypeScript](https://www.typescriptlang.org)** — Typsicherheit
-- **[Tailwind CSS](https://tailwindcss.com)** — Utility-first CSS
-- **[Framer Motion](https://www.framer.com/motion/)** — Animationen
-- **[Lucide Icons](https://lucide.dev)** — Icon-Bibliothek
+- **[Next.js 15](https://nextjs.org)** - React Framework mit App Router
+- **[React 19](https://react.dev)** - UI Library
+- **[TypeScript](https://www.typescriptlang.org)** - Typsicherheit
+- **[Tailwind CSS](https://tailwindcss.com)** - Utility-first CSS
+- **[Framer Motion](https://www.framer.com/motion/)** - Animationen
+- **[Lucide Icons](https://lucide.dev)** - Icon-Bibliothek
 
 ## Features
 
@@ -84,7 +84,7 @@ npm run start
 
 ## Inhalte anpassen
 
-Alle Inhalte sind direkt in den jeweiligen Section-Komponenten in `components/sections/` definiert — einfach den entsprechenden Array bzw. Text bearbeiten.
+Alle Inhalte sind direkt in den jeweiligen Section-Komponenten in `components/sections/` definiert - einfach den entsprechenden Array bzw. Text bearbeiten.
 
 ## Deployment auf GitHub Pages
 
@@ -118,8 +118,8 @@ npx serve out -l 3000   # statischer Server zur Vorschau
 
 ### Alternativen
 
-- **[Vercel](https://vercel.com)** — Repo verbinden, kein basePath nötig (`NEXT_PUBLIC_BASE_PATH` leer lassen).
-- **Netlify**, **Cloudflare Pages** — funktionieren mit dem statischen `out/` Ordner.
+- **[Vercel](https://vercel.com)** - Repo verbinden, kein basePath nötig (`NEXT_PUBLIC_BASE_PATH` leer lassen).
+- **Netlify**, **Cloudflare Pages** - funktionieren mit dem statischen `out/` Ordner.
 
 ## Rechtliches
 

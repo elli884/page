@@ -19,7 +19,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Elisabeth Nejedli",
   description:
-    "Personal portfolio of Elisabeth Nejedli — MATSE trainee passionate about software, AI and mathematics.",
+    "Personal portfolio of Elisabeth Nejedli - MATSE trainee passionate about software, AI and mathematics.",
   keywords: [
     "Elisabeth Nejedli",
     "Portfolio",

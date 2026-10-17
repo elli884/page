@@ -14,6 +14,7 @@ const skills: Skill[] = [
   { icon: "🔍", name: "Java & GUI Development", level: 3 },
   { icon: "🐍", name: "Python, LLMs & Machine Learning", level: 4 },
   { icon: "⚙️", name: "Mechatronics & Electronics", level: 1 },
+  { icon: "⚡", name: "Adaptability & Continuous Learning", level: 5 },
 ];
 
 export default function Skills() {
